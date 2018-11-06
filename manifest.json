@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "gdc-github-jira",
+  "version": "4",
+
+  "description": "GDC GitHub JIRA integration (transform ticket identifiers into links)",
+
+  "content_scripts": [{
+    "matches": ["https://github.com/gooddata/*"],
+    "js": ["gdc-github-jira.user.js"]
+  }]
+}
